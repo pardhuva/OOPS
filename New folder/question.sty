@@ -1,0 +1,14 @@
+design and implement a gym membership management system that manages member registrations class sceduling and fe payments teh system should support data persistence (via file handling) ensure class availability handle membe renrollments and cancellations and payment receipts the system shoud be modular flexible and use modern java features    
+define a member class to store member details such as name membership id contact information membership type (basic,premium)
+allow members to enroll in multiple classes based on their membership type and available slots 
+implement a classschedule class with attributes like classid .type(yoga,zumba,weight training),instructor,schedule (date and time) and maximum capacity) ensure class slots are available before confirming member enrollment 
+create an enrollment class to store enrollment details including the member class and schedule 
+implement functionality to cancel enrollments and update class capacity
+implement a payment class to calculate and store membership fees class fees and additional charges
+generate payment receipts and maintain record of teansactions for future reference
+store member,class,enrollment data using file i/o ensure data is saved and reloaded across sessions 
+handle invalid class ids ,unavailable slots and invalid enrollment cancellations 
+
+design requirement saved use generics for collections such as List<Member> or <Map>ClassScheudle,List<Enrollment>>to ensure type safety and flexibility
+implement inner classes where relevant such as ClassType or FeeDetails ,to logically group drelated data within parent classes 
+define interfaces like persistable for classes that supprt data saving and loading and schedulable for classes that handle scheduling logic this will enable extensibility and separation of concerns
